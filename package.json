@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-shop-restapi",
+  "version": "1.0.0",
+  "description": "a simple rest api for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enessirkecioglu/Nodejs-Shop-RestApi.git"
+  },
+  "keywords": [
+    "restful",
+    "nodejs",
+    "api"
+  ],
+  "author": "Enes Sirkecioglu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enessirkecioglu/Nodejs-Shop-RestApi/issues"
+  },
+  "homepage": "https://github.com/enessirkecioglu/Nodejs-Shop-RestApi#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
