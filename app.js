@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 
 const productRoutes = require('./api/routes/products');
 const ordersRoutes = require('./api/routes/orders');
+const userRoutes = require('./api/routes/user');
 
 mongoose.connect('mongodb+srv://nodeshopuser:' + process.env.MONGO_ATLAS_PW +'@node-shop.qsr1r2n.mongodb.net/?retryWrites=true&w=majority&appName=node-shop');
 mongoose.Promise = global.Promise;
@@ -27,6 +28,7 @@ app.use((req, res, next) => {
 
 app.use('/products', productRoutes);
 app.use('/orders', ordersRoutes);
+app.use('/user', userRoutes);
 
 app.use((req, res, next) => {
     const error = new Error('Not found');
